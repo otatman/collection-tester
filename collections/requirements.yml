@@ -1,3 +1,3 @@
 ---
 collections:
-- update_collection_test.testing_collection
+  - name: update_collection_test.testing_collection
