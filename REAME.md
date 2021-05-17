@@ -1,0 +1,2 @@
+this repo is meant for creating a playbook that calls a collection from the private automation hub.
+- once i am able to run this playbook from tower I will look to automate the update of the role in the collection using this folder
