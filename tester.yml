@@ -3,4 +3,4 @@
   hosts: all
   tasks:
     - import_role:
-        name: debug
+        name: update_collection_test.testing_collection.debug
