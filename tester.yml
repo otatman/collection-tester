@@ -1,8 +1,6 @@
 ---
 - name: playbook to test calling collection from private automation hub
   hosts: all
-  collections:
-    - update_collection_test.testing_collection
   tasks:
-    - import-role:
+    - import_role:
         name: debug
