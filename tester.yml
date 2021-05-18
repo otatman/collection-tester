@@ -12,13 +12,13 @@
       tags:
         - always
 
-  tasks:
-    - name: publish collection
-      redhat_cop.ah_configuration.ah_collection_upload:
-        ah_host: "{{ ah_host }}"
-        ah_username: "{{ ah_username | default(omit) }}"
-        ah_password: "{{ ah_password | default(omit) }}"
-        ah_token: "{{ ah_token | default(omit) }}"  
+  # tasks:
+  #   - name: publish collection
+  #     redhat_cop.ah_configuration.ah_collection_upload:
+  #       ah_host: "{{ ah_host }}"
+  #       ah_username: "{{ ah_username | default(omit) }}"
+  #       ah_password: "{{ ah_password | default(omit) }}"
+  #       ah_token: "{{ ah_token | default(omit) }}"  
 
   roles:
     - redhat_cop.ah_configuration.publish
