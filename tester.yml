@@ -7,7 +7,7 @@
   pre_tasks:
     - name: include vars from ah_configs directory
       include_vars:
-        dir: ./vars/ah_configs
+        dir: ./vars/ah_configs/
         extensions: ["yml"]
       tags:
         - always
