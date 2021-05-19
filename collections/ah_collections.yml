@@ -1,5 +1,5 @@
 ---
 ah_collections:
   - collection_name: debug
-    git_url: "https://github.com/otatman/automationhub-collection-test/tree/master/update_collection_test/testing_collection"
+    git_url: "https://github.com/otatman/automationhub-collection-test/blob/master/update_collection_test/testing_collection/update_collection_test-testing_collection-1.0.0.tar.gz"
 ah_auto_approve: true
