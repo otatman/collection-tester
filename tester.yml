@@ -9,8 +9,6 @@
       include_vars:
         dir: ./vars/ah_configs/
         extensions: ["yml"]
-      tags:
-        - always
 
   # tasks:
   #   - name: publish collection
@@ -20,8 +18,8 @@
   #       ah_password: "{{ ah_password | default(omit) }}"
   #       ah_token: "{{ ah_token | default(omit) }}"  
 
-  roles:
-    - redhat_cop.ah_configuration.publish
+  # roles:
+  #   - redhat_cop.ah_configuration.publish
   
   
   
