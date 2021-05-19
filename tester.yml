@@ -9,7 +9,7 @@
     ah_username: "admin"
     ah_password: "Pool3ssh!"  
   vars_files:
-    - /collections/ah_collections.yml
+    - collections/ah_collections.yml
   pre_tasks:
   #   - name: include vars from ah_configs directory
   #     include_vars:
