@@ -1,14 +1,17 @@
 ---
 - name: playbook to push collection from github to private automation hub
   hosts: all
-  gather_facts: false
-  vars:
-    ah_validate_certs: false
-  pre_tasks:
-    - name: include vars from ah_configs directory
-      include_vars:
-        dir: ./vars/ah_configs/
-        extensions: ["yml"]
+    tasks:
+    - import_role:
+        name: update_collection_test.testing_collection.debug
+  # gather_facts: false
+  # vars:
+  #   ah_validate_certs: false
+  # pre_tasks:
+  #   - name: include vars from ah_configs directory
+  #     include_vars:
+  #       dir: ./vars/ah_configs/
+  #       extensions: ["yml"]
 
   # tasks:
   #   - name: publish collection
@@ -19,15 +22,10 @@
   #       ah_token: "{{ ah_token | default(omit) }}"  
 
   # roles:
-  #   - redhat_cop.ah_configuration.publish
-  
-  
-  
+  #   - redhat_cop.ah_configuration.publis
   
    
   
-  #tasks:
-    # - import_role:
-    #     name: update_collection_test.testing_collection.debug
+
     
       
