@@ -1,0 +1,16 @@
+---
+ah_namespaces:
+  - name: update_collection_test
+    # company:
+    # email:
+    # avatar_url:
+    # description: string
+    # resources: 
+    # links:
+    #   - name: "nothing"
+    #     url:
+    groups:
+      - name: system:admins
+        object_permissions:
+          - "change_namespace"
+          - "upload_to_namespace"
