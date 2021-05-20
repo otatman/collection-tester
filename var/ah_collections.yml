@@ -2,5 +2,7 @@
 ah_collections:
   - collection_name: debug
     git_url: "https://github.com/otatman/automationhub-collection-test.git"
+  - collection_local_path: /var/tmp/tower_configuration
+    collection_name: tower_configuration
 ah_auto_approve: true
 ansible_config_path: "{{ ah_configuration_working_dir }}/ansible.cfg"
