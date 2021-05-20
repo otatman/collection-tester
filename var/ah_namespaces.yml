@@ -6,9 +6,9 @@ ah_namespaces:
     # avatar_url:
     # description: string
     # resources: 
-    # links:
-    #   - name: "nothing"
-    #     url:
+    links:
+      - name: "nothing"
+        url: "https://github.com/ansible/awx"
     groups:
       - name: system:admins
         object_permissions:

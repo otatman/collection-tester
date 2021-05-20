@@ -5,4 +5,4 @@ ah_collections:
   - collection_local_path: /var/tmp/tower_configuration
     collection_name: tower_configuration
 ah_auto_approve: true
-ansible_config_path: "{{ ah_configuration_working_dir }}/ansible.cfg"
+#ansible_config_path: "{{ ah_configuration_working_dir }}/ansible.cfg"

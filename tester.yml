@@ -18,7 +18,7 @@
       include_vars:
         dir: ./var
         extensions: ["yml"]
-    - name: create a directory that doesnt exist
+    - name: create a directory if it doesnt exist
       ansible.builtin.file:
         path: "{{ ah_configuration_working_dir }}"
         state: directory
