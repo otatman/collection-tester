@@ -16,7 +16,7 @@
   pre_tasks:
     - name: include vars from ah_configs directory
       include_vars:
-        dir: var/
+        dir: ./var
         extension: ["yml"]
     # - name: create a directory that doesnt exist
     #   ansible.builtin.file:
