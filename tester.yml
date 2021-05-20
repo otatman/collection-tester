@@ -9,15 +9,40 @@
     ah_username: "admin"
     ah_password: "Pool3ssh!"  
   vars_files:
-    - collections/ah_collections.yml
-  pre_tasks:
-  #   - name: include vars from ah_configs directory
-  #     include_vars:
-  #       dir: ./var/ah_configs/
-  #       extensions: ["yml"]
+    - var/ah_collections.yml
+  collections:
+    - redhat_cop.ah_configuration
+  #pre_tasks:
+    # - name: include vars from ah_configs directory
+    #   include_vars:
+    #     dir: var/ah_configs/
+    #     extension: ["yml"]
+    #   tags:
+    #     - always
+    # - name: create a directory that doesnt exist
+    #   ansible.builtin.file:
+    #     path: var/tmp/
+    #     state: directory
+    #     mode: '0755'
 
-  roles:
-    - redhat_cop.ah_configuration.publish
+  tasks:
+    - name: authenticate and get api token
+      ah_token:
+        ah_host: "{{ ah_host }}"
+        ah_username: "{{ ah_username }}"
+        ah_password: "{{ ah_password }}"
+        ah_path_prefix: "{{ ah_path_prefix }}"
+        validate_certs: "{{ ah_validate_certs }}"
+    
+    - name: publish collections
+      include_role: 
+        name: publish
+      vars:
+        ah_auto_approve: true
+        
+
+  # roles:
+  #   - redhat_cop.ah_configuration.publish
   
   
 
