@@ -31,7 +31,7 @@
         ah_host: "{{ ah_host }}"
         ah_username: "{{ ah_username }}"
         ah_password: "{{ ah_password }}"
-        ah_path_prefix: "{{ ah_path_prefix }}"
+        ah_path_prefix: "automation-hub"
         validate_certs: "{{ ah_validate_certs }}"
     
     - name: publish collections
