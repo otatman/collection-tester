@@ -7,7 +7,8 @@
     ah_host: "http://10.1.196.109"
     ah_token: "26325ad7545104a6d7252c444a036402310a9d8a"
     ah_username: "admin"
-    ah_password: "Pool3ssh!"  
+    ah_password: "Pool3ssh!"
+    ah_path_prefix: "galaxy"  
   vars_files:
     - var/ah_collections.yml
   collections:
