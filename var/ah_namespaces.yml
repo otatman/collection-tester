@@ -1,14 +1,13 @@
 ---
 ah_namespaces:
   - name: update_collection_test
-    # company:
-    # email:
-    # avatar_url:
-    # description: string
-    # resources: 
-    links:
-      - name: "nothing"
-        url: "https://github.com/ansible/awx"
+    email: "jtatman@redhat.com"
+    avatar_url: "public"
+    description: string
+    resources: 
+    # links:
+    #   - name: "nothing"
+    #     url: "https://github.com/ansible/awx"
     groups:
       - name: system:admins
         object_permissions:

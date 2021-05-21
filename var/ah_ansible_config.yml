@@ -7,6 +7,7 @@ automation_hub_list:
     password: "{{ ah_password }}"
     token: "{{ ah_token }}"
 
+#ask about header and keypair values 
 ansible_config_list:
   - header: galaxy
     keypairs: 
@@ -14,4 +15,4 @@ ansible_config_list:
         value: "(% if validate_certs %)false(% else %)true(% endif %)"
       - key: server_list
         value: "automation_hub"
-ah_configuration_working_dir: "var/tmp"
+#ah_configuration_working_dir: "var/tmp"
