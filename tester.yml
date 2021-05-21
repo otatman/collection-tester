@@ -25,6 +25,14 @@
     #     mode: '0755'
 
   tasks:
+    
+    - name: authenticate and get an API token
+      ah_token:
+        ah_host: "{{ ah_host }}"
+        ah_username: "{{ ah_username }}"
+        ah_password: "{{ ah_password }}"
+        ah_path_prefix: "{{ ah_path_prefix }}"
+        validate_certs: "{{ ah_validate_certs }}"
 
     - name: publish collections
       include_role: 
