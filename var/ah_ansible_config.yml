@@ -6,8 +6,7 @@ automation_hub_list:
     username: "{{ ah_username }}"
     password: "{{ ah_password }}"
     token: "{{ old_ah_token }}"
-
-ask about header and keypair values 
+ 
 ansible_config_list:
   settings:
     - header: galaxy
