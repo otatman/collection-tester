@@ -5,14 +5,14 @@ automation_hub_list:
     auth_url: "{{ ah_host }}/api/galaxy/"
     username: "{{ ah_username }}"
     password: "{{ ah_password }}"
-    #token: "{{ ah_token }}"
+    token: "{{ old_ah_token }}"
 
-#ask about header and keypair values 
-# ansible_config_list:
-#   - header: galaxy
-#     keypairs: 
-#       - key: ignore_certs
-#         value: "(% if validate_certs %)false(% else %)true(% endif %)"
-#       - key: server_list
-#         value: "automation_hub"
-#ah_configuration_working_dir: "var/tmp"
+ask about header and keypair values 
+ansible_config_list:
+  - header: galaxy
+    keypairs: 
+      - key: ignore_certs
+        value: "(% if validate_certs %)false(% else %)true(% endif %)"
+      - key: server_list
+        value: "automation_hub"
+ah_configuration_working_dir: "var/tmp"
