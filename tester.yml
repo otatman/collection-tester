@@ -2,15 +2,15 @@
 - name: playbook to push collection from github to private automation hub
   hosts: all
   gather_facts: false
-  vars:
-    ah_validate_certs: false
-    ah_host: "http://10.1.196.109"
-    ah_token: "26325ad7545104a6d7252c444a036402310a9d8a"
-    ah_username: "admin"
-    ah_password: "Pool3ssh!"
-    ah_path_prefix: "automation-hub"  
-  vars_files:
-    - var/ah_collections.yml
+  # vars:
+  #   ah_validate_certs: false
+  #   ah_host: "http://10.1.196.109"
+  #   ah_token: "26325ad7545104a6d7252c444a036402310a9d8a"
+  #   ah_username: "admin"
+  #   ah_password: "Pool3ssh!"
+  #   ah_path_prefix: "automation-hub"  
+  # vars_files:
+  #   - var/ah_collections.yml
   collections:
     - redhat_cop.ah_configuration
   pre_tasks:
