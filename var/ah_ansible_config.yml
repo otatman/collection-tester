@@ -2,17 +2,17 @@
 automation_hub_list:
   - name: automation_hub
     url: "{{ ah_host }}"
-    auth_url: "{{ ah_host }}api/automation-hub/"
+    auth_url: "{{ ah_host }}api/automation-hub/v3/artifacts/collections/."
     username: "{{ ah_username }}"
     password: "{{ ah_password }}"
     token: "{{ ah_token }}"
 
 #ask about header and keypair values 
-ansible_config_list:
-  - header: galaxy
-    keypairs: 
-      - key: ignore_certs
-        value: "(% if validate_certs %)false(% else %)true(% endif %)"
-      - key: server_list
-        value: "automation_hub"
+# ansible_config_list:
+#   - header: galaxy
+#     keypairs: 
+#       - key: ignore_certs
+#         value: "(% if validate_certs %)false(% else %)true(% endif %)"
+#       - key: server_list
+#         value: "automation_hub"
 #ah_configuration_working_dir: "var/tmp"
