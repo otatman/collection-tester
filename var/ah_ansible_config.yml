@@ -5,7 +5,7 @@ automation_hub_list:
     auth_url: "{{ ah_host }}/api/galaxy/"
     username: "{{ ah_username }}"
     password: "{{ ah_password }}"
-    #token: "{{ old_ah_token }}"
+    token: "{{ old_ah_token }}"
  
 ansible_config_list:
   settings:
