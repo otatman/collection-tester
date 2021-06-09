@@ -25,10 +25,6 @@
     #     mode: '0755'
 
   tasks:
-
-    - name: add namespace to AH
-      include_role:
-        name: namespace
     
     - name: authenticate and get an API token
       ah_token:
@@ -45,6 +41,10 @@
         name: publish
       vars:
         ah_auto_approve: true
+
+    - name: add namespace to AH
+      include_role:
+        name: namespace
         
 
   # roles:
