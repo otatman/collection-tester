@@ -1,5 +1,5 @@
 ---
-ah_namespace:
+ah_namespaces:
   - name: update_collection_test_02
     email: "jtatman@redhat.com"
     avatar_url: "public"
