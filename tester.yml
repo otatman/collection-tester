@@ -25,6 +25,10 @@
     #     mode: '0755'
 
   tasks:
+
+    - name: add namespace to AH
+      include_role:
+        name: namespace
     
     - name: authenticate and get an API token
       ah_token:
@@ -35,7 +39,7 @@
         ah_password: "{{ ah_password }}"
         ah_path_prefix: "{{ ah_path_prefix }}"
         validate_certs: "{{ ah_validate_certs }}"
-
+        
     - name: publish collections
       include_role: 
         name: publish
