@@ -1,8 +1,8 @@
 ---
 ah_host: "https://10.1.196.109"
-ah_token: "9eaf4c890f97b098cfdfb8cc327ad0a88e4727cb"
-#ah_username: "admin"
-#ah_password: "Pool3ssh!"
+#ah_token: "9eaf4c890f97b098cfdfb8cc327ad0a88e4727cb"
+ah_username: "automation_test"
+ah_password: "Password1234!"
 ah_path_prefix: 'galaxy'
 ah_validate_certs: false
 
