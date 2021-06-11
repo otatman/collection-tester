@@ -4,7 +4,7 @@
   gather_facts: false
   vars:
     ah_validate_certs: false
-    ah_host: "http://10.1.196.109"
+    ah_host: "https://10.1.196.109"
   #   ah_token: "26325ad7545104a6d7252c444a036402310a9d8a"
     ah_username: "admin"
     ah_password: "Pool3ssh!"
