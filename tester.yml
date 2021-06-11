@@ -42,9 +42,9 @@
       vars:
         ah_auto_approve: true
 
-    - name: add namespace to AH
-      include_role:
-        name: namespace
+    # - name: add namespace to AH
+    #   include_role:
+    #     name: namespace
         
 
   # roles:
